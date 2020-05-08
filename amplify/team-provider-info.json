@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-forgetjs-dev-184700-authRole",
+            "UnauthRoleArn": "arn:aws:iam::343303531972:role/amplify-forgetjs-dev-184700-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::343303531972:role/amplify-forgetjs-dev-184700-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-forgetjs-dev-184700-deployment",
+            "UnauthRoleName": "amplify-forgetjs-dev-184700-unauthRole",
+            "StackName": "amplify-forgetjs-dev-184700",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:343303531972:stack/amplify-forgetjs-dev-184700/8970be20-8f7e-11ea-8c02-06d571b61710",
+            "AmplifyAppId": "d311c167u5ocqp"
+        },
+        "categories": {
+            "auth": {
+                "forgetjsc74d11ca": {}
+            }
+        }
+    }
+}
