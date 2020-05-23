@@ -13,7 +13,9 @@
         },
         "categories": {
             "auth": {
-                "forgetjsc74d11ca": {}
+                "forgetjsc74d11ca": {
+                    "hostedUIProviderCreds": "[]"
+                }
             }
         }
     }

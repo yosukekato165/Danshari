@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Amplify from 'aws-amplify';
 import config from './aws-exports';
 import 'element-theme-default';
+
+export default React.PureComponent;
+export const pureComponentAvailable = true;
 Amplify.configure(config);
 
 ReactDOM.render(

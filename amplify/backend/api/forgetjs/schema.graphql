@@ -14,7 +14,7 @@ type Storehouse @model @searchable @auth(rules: [{ allow: owner }]) {
   storehouse: Storehouse @connection(name: "StorehouseProducts")
   file: S3Object!
   price: Float!
-  shipped: Boolean!
+  shipped: Boolean
   owner: String
   createdAt: String
 }

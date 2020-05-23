@@ -58,7 +58,7 @@ function NewStorehouse() {
         <>
         <div className='storehouse-header'>
             <h1 className='storehouse-title'>
-            倉庫の作成
+            場所の作成
             <Button
                 type='text'
                 icon='plus'
@@ -68,7 +68,7 @@ function NewStorehouse() {
             </h1>
         </div>
         <Dialog
-            title='倉庫の作成'
+            title='場所の作成'
             visible={addStorehouseDialog}
             onCancel={() => setAddStorehouseDialog(false)}
             size='large'
