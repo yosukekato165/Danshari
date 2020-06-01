@@ -15,14 +15,17 @@ export const createStorehouse = /* GraphQL */ `
           description
           price
           shipped
+          term
           owner
           createdAt
+          updatedAt
         }
         nextToken
       }
       tags
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -40,14 +43,17 @@ export const updateStorehouse = /* GraphQL */ `
           description
           price
           shipped
+          term
           owner
           createdAt
+          updatedAt
         }
         nextToken
       }
       tags
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -65,14 +71,17 @@ export const deleteStorehouse = /* GraphQL */ `
           description
           price
           shipped
+          term
           owner
           createdAt
+          updatedAt
         }
         nextToken
       }
       tags
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -93,6 +102,7 @@ export const createProduct = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       file {
         bucket
@@ -101,8 +111,10 @@ export const createProduct = /* GraphQL */ `
       }
       price
       shipped
+      term
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -123,6 +135,7 @@ export const updateProduct = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       file {
         bucket
@@ -131,8 +144,10 @@ export const updateProduct = /* GraphQL */ `
       }
       price
       shipped
+      term
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -153,6 +168,7 @@ export const deleteProduct = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       file {
         bucket
@@ -161,8 +177,10 @@ export const deleteProduct = /* GraphQL */ `
       }
       price
       shipped
+      term
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -176,6 +194,8 @@ export const registerUser = /* GraphQL */ `
       username
       email
       registered
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -189,6 +209,8 @@ export const updateUser = /* GraphQL */ `
       username
       email
       registered
+      createdAt
+      updatedAt
     }
   }
 `;

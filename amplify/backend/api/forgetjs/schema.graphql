@@ -8,17 +8,17 @@ type Storehouse @model @searchable @auth(rules: [{ allow: owner }]) {
   createdAt: String
 }
 
-  type Product @model @auth(rules: [{ allow: owner }]) {
+type Product @model @auth(rules: [{ allow: owner }]) {
   id: ID!
   description: String!
   storehouse: Storehouse @connection(name: "StorehouseProducts")
   file: S3Object!
   price: Float!
   shipped: Boolean
+  term: String
   owner: String
   createdAt: String
 }
-
 type S3Object {
   bucket: String!
   region: String!
@@ -30,7 +30,7 @@ type User
   queries: { get: "getUser" }
   mutations: { create: "registerUser", update: "updateUser" }
   subscriptions: null
-) {
+  ) {
   id: ID!
   username: String!
   email: String!

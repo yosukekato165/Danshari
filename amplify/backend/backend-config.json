@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"forgetjsc74d11ca": {
+		"forgetjsaa641cd4": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": []
@@ -16,7 +16,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
 						"userPoolConfig": {
-							"userPoolId": "authforgetjsc74d11ca"
+							"userPoolId": "authforgetjsaa641cd4"
 						}
 					}
 				}
@@ -24,7 +24,7 @@
 		}
 	},
 	"storage": {
-		"forgetjs": {
+		"s3313e3139": {
 			"service": "S3",
 			"providerPlugin": "awscloudformation"
 		}

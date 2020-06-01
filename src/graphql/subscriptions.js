@@ -12,14 +12,17 @@ export const onCreateStorehouse = /* GraphQL */ `
           description
           price
           shipped
+          term
           owner
           createdAt
+          updatedAt
         }
         nextToken
       }
       tags
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -34,14 +37,17 @@ export const onUpdateStorehouse = /* GraphQL */ `
           description
           price
           shipped
+          term
           owner
           createdAt
+          updatedAt
         }
         nextToken
       }
       tags
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -56,14 +62,17 @@ export const onDeleteStorehouse = /* GraphQL */ `
           description
           price
           shipped
+          term
           owner
           createdAt
+          updatedAt
         }
         nextToken
       }
       tags
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -81,6 +90,7 @@ export const onCreateProduct = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       file {
         bucket
@@ -89,8 +99,10 @@ export const onCreateProduct = /* GraphQL */ `
       }
       price
       shipped
+      term
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -108,6 +120,7 @@ export const onUpdateProduct = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       file {
         bucket
@@ -116,8 +129,10 @@ export const onUpdateProduct = /* GraphQL */ `
       }
       price
       shipped
+      term
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -135,6 +150,7 @@ export const onDeleteProduct = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       file {
         bucket
@@ -143,8 +159,10 @@ export const onDeleteProduct = /* GraphQL */ `
       }
       price
       shipped
+      term
       owner
       createdAt
+      updatedAt
     }
   }
 `;

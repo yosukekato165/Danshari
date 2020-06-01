@@ -12,14 +12,17 @@ export const getStorehouse = /* GraphQL */ `
           description
           price
           shipped
+          term
           owner
           createdAt
+          updatedAt
         }
         nextToken
       }
       tags
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -39,6 +42,7 @@ export const listStorehouses = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       nextToken
     }
@@ -58,6 +62,7 @@ export const getProduct = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       file {
         bucket
@@ -66,8 +71,10 @@ export const getProduct = /* GraphQL */ `
       }
       price
       shipped
+      term
       owner
       createdAt
+      updatedAt
     }
   }
 `;
@@ -87,6 +94,7 @@ export const listProducts = /* GraphQL */ `
           tags
           owner
           createdAt
+          updatedAt
         }
         file {
           bucket
@@ -95,8 +103,10 @@ export const listProducts = /* GraphQL */ `
         }
         price
         shipped
+        term
         owner
         createdAt
+        updatedAt
       }
       nextToken
     }
@@ -109,6 +119,8 @@ export const getUser = /* GraphQL */ `
       username
       email
       registered
+      createdAt
+      updatedAt
     }
   }
 `;
@@ -134,6 +146,7 @@ export const searchStorehouses = /* GraphQL */ `
         tags
         owner
         createdAt
+        updatedAt
       }
       nextToken
       total

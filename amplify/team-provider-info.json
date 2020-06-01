@@ -1,21 +1,19 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-forgetjs-dev-184700-authRole",
-            "UnauthRoleArn": "arn:aws:iam::343303531972:role/amplify-forgetjs-dev-184700-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::343303531972:role/amplify-forgetjs-dev-184700-authRole",
+            "AuthRoleName": "amplify-forgetjs-dev-203252-authRole",
+            "UnauthRoleArn": "arn:aws:iam::343303531972:role/amplify-forgetjs-dev-203252-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::343303531972:role/amplify-forgetjs-dev-203252-authRole",
             "Region": "ap-northeast-1",
-            "DeploymentBucketName": "amplify-forgetjs-dev-184700-deployment",
-            "UnauthRoleName": "amplify-forgetjs-dev-184700-unauthRole",
-            "StackName": "amplify-forgetjs-dev-184700",
-            "StackId": "arn:aws:cloudformation:ap-northeast-1:343303531972:stack/amplify-forgetjs-dev-184700/8970be20-8f7e-11ea-8c02-06d571b61710",
-            "AmplifyAppId": "d311c167u5ocqp"
+            "DeploymentBucketName": "amplify-forgetjs-dev-203252-deployment",
+            "UnauthRoleName": "amplify-forgetjs-dev-203252-unauthRole",
+            "StackName": "amplify-forgetjs-dev-203252",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:343303531972:stack/amplify-forgetjs-dev-203252/2395f190-a1a0-11ea-9b6c-0e0119a58df2",
+            "AmplifyAppId": "d26z77s9h1ig1q"
         },
         "categories": {
             "auth": {
-                "forgetjsc74d11ca": {
-                    "hostedUIProviderCreds": "[]"
-                }
+                "forgetjsaa641cd4": {}
             }
         }
     }
