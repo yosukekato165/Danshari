@@ -1,4 +1,4 @@
-type Storehouse @model @searchable @auth(rules: [{ allow: owner }]) {
+type Storehouse @model @auth(rules: [{ allow: owner }]) {
   id: ID!
   name: String!
   products: [Product]
@@ -13,7 +13,7 @@ type Product @model @auth(rules: [{ allow: owner }]) {
   description: String!
   storehouse: Storehouse @connection(name: "StorehouseProducts")
   file: S3Object!
-  price: Float!
+  price: Float
   shipped: Boolean
   term: String
   owner: String

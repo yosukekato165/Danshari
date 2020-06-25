@@ -124,32 +124,3 @@ export const getUser = /* GraphQL */ `
     }
   }
 `;
-export const searchStorehouses = /* GraphQL */ `
-  query SearchStorehouses(
-    $filter: SearchableStorehouseFilterInput
-    $sort: SearchableStorehouseSortInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    searchStorehouses(
-      filter: $filter
-      sort: $sort
-      limit: $limit
-      nextToken: $nextToken
-    ) {
-      items {
-        id
-        name
-        products {
-          nextToken
-        }
-        tags
-        owner
-        createdAt
-        updatedAt
-      }
-      nextToken
-      total
-    }
-  }
-`;

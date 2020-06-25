@@ -42,7 +42,7 @@ function Product({ product }) {
         
         Notification({
             title: '成功',
-            message: '製品の更新が完了しました！',
+            message: 'ストックの更新が完了しました！',
             type: 'success',
             duration: 2000
         });
@@ -59,7 +59,7 @@ function Product({ product }) {
 
         Notification({
             title: '成功',
-            message: '製品の削除が完了しました！',
+            message: 'ストックの削除が完了しました！',
             type: 'success',
             duration: 2000
         });
@@ -135,7 +135,7 @@ function Product({ product }) {
 
         {/* Update Product Dialog */}
         <Dialog
-            title='製品の更新'
+            title='ストックの更新'
             size='large'
             customClass='dialog'
             visible={updateProductDialog}

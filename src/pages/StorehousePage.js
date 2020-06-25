@@ -144,7 +144,7 @@ function StorehousePage({ storehouseId }) {
     <>
       {/* Back Button */}
       <Link className='link' to=''>
-        場所一覧へ戻る
+        棚一覧へ戻る
       </Link>
 
       {/* Storehouse MetaData */}
@@ -164,7 +164,7 @@ function StorehousePage({ storehouseId }) {
           label={
             <>
               <Icon name='plus' className='icon' />
-              製品を追加
+              ストックの追加
             </>
           }
           name='1'
@@ -176,7 +176,7 @@ function StorehousePage({ storehouseId }) {
           label={
             <>
               <Icon name='menu' className='icon' />
-              Products ({ storehouse.products.items.length })
+              ストック ({ storehouse.products.items.length })
             </>
           }
           name='2'

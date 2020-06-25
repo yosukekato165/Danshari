@@ -13,7 +13,7 @@ const Navbar = ({ user, handleSignout }) => (
                 alt='App Icon'
                 className='app-icon'
                 />
-                Storehouse App
+                StockStore App
             </span>
             </NavLink>
         </Nav.Item>

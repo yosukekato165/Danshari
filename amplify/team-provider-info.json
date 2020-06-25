@@ -14,6 +14,12 @@
         "categories": {
             "auth": {
                 "forgetjsaa641cd4": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d26z77s9h1ig1q",
+                    "type": "manual"
+                }
             }
         }
     }

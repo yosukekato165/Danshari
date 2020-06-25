@@ -57,7 +57,7 @@ function NewProduct({ storehouseId }) {
 
         Notification({
             title: '成功',
-            message: '物の登録が完了しました！',
+            message: 'ストックの登録が完了しました！',
             type: 'success'
         });
         clearState()
@@ -69,10 +69,10 @@ function NewProduct({ storehouseId }) {
 
     return (
         <div className='flex-center'>
-        <h2 className='header'>物の追加</h2>
+        <h2 className='header'>ストックの追加</h2>
         <div>
             <Form className='storehouse-header'>
-            <Form.Item label='物の説明'>
+            <Form.Item label='ストックの説明'>
                 <Input
                 type='text'
                 icon='information'
@@ -81,7 +81,7 @@ function NewProduct({ storehouseId }) {
                 onChange={description => setDescription(description)}
                 />
             </Form.Item>
-            <Form.Item label='製品価格'>
+            {/* <Form.Item label='製品価格'>
                 <Input
                 type='number'
                 icon='plus'
@@ -89,7 +89,7 @@ function NewProduct({ storehouseId }) {
                 value={price}
                 onChange={price => setPrice(price)}
                 />
-            </Form.Item>
+            </Form.Item> */}
             {imagePreview && (
                 <img
                 className='image-preview'
@@ -97,13 +97,13 @@ function NewProduct({ storehouseId }) {
                 alt='Produt Preview'
                 />
             )}
-            {percentUploaded > 0 && (
+            {/* {percentUploaded > 0 && (
                 <Progress
                 type='circle'
                 className='progress'
                 percentage={percentUploaded}
                 />
-            )}
+            )} */}
             <PhotoPicker
                 title='画像'
                 preview='hidden'
@@ -113,7 +113,7 @@ function NewProduct({ storehouseId }) {
             <Form.Item>
                 <Button
                 type='primary'
-                disabled={!image || !description || !price || isUploading}
+                disabled={!image || !description || price}
                 onClick={handleAddProduct}
                 loading={isUploading}
                 >
