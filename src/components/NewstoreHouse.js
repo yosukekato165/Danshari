@@ -28,7 +28,6 @@ function NewStorehouse() {
             owner,
             tags: selectedTags
         }
-        console.log(input)
         const result = await API.graphql(graphqlOperation(createStorehouse, { input }));
         
         console.info(`Created storehouse: id ${result.data.createStorehouse.id}`);
