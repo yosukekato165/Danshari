@@ -130,13 +130,13 @@ function StorehousePage({ storehouseId }) {
           });
         }
       });
-
+      debugger
     return () => {
       createProductListener.unsubscribe();
       updateProductListener.unsubscribe();
       deleteProductListener.unsubscribe();
     }
-  }, [storehouse, user.username]);
+  }, [user.username]);
 
   return isLoading ? (
     <Loading fullscreen={true} />
