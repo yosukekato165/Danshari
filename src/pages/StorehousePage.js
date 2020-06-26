@@ -130,7 +130,7 @@ function StorehousePage({ storehouseId }) {
           });
         }
       });
-      debugger
+
     return () => {
       createProductListener.unsubscribe();
       updateProductListener.unsubscribe();

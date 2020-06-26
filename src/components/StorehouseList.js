@@ -38,7 +38,7 @@ const StorehouseList = () => {
             }
         }
         fetchData();
-    },[storehouse]);
+    },[]);
 
     const handleDeleteProduct = async productId => {
         try {
